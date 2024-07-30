@@ -3,7 +3,35 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34701.34
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "andromeda-asp-api", ".", "{3C3FD79B-C717-48FE-AED9-0A4AD04BA45F}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.8"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_3110"
+		Debug.AspNetCompiler.PhysicalPath = "..\andromeda-asp-api\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_3110\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_3110"
+		Release.AspNetCompiler.PhysicalPath = "..\andromeda-asp-api\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_3110\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "3110"
+		SlnRelativePath = "..\andromeda-asp-api\"
+	EndProjectSection
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3C3FD79B-C717-48FE-AED9-0A4AD04BA45F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C3FD79B-C717-48FE-AED9-0A4AD04BA45F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
