@@ -1,6 +1,6 @@
 # Andromeda ASP.NET Core API
 
-Welcome to the Andromeda ASP.NET Core API! This project serves as the backend for Andromeda, a social media platform. It provides a set of RESTful endpoints to manage users, friendships, posts, likes, comments, tags, notifications, products, product likes, product comments, product tags, chats, and messages. The API uses JWT for authentication and PostgreSQL as the database.
+Welcome to the Andromeda ASP.NET Core API! This project serves as the backend for Andromeda, a social media platform. It provides a set of RESTful endpoints to manage users, friendships, posts, likes, comments, tags, notifications, products, product likes, product comments, product tags, chats, and messages. The API uses JWT for authentication and Neo4j and Redis as the databases.
 
 ## Table of Contents
 
@@ -19,13 +19,14 @@ To get a local copy up and running, follow these simple steps.
 ### Prerequisites
 
 - [.NET Core SDK](https://dotnet.microsoft.com/download)
-- [PostgreSQL](https://www.postgresql.org/download/)
+- [Neo4j](https://neo4j.com/download/)
+- [Redis](https://redis.io/download)
 
 ### Installation
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/your-username/andromeda-asp-api.git
+   git clone https://github.com/7irelo/andromeda-asp-api.git
    ```
 2. Navigate to the project directory:
    ```sh
@@ -35,15 +36,16 @@ To get a local copy up and running, follow these simple steps.
    ```sh
    dotnet restore
    ```
-4. Set up your PostgreSQL database and update the connection string in `appsettings.json`:
+4. Set up your Neo4j and Redis databases and update the connection strings in `appsettings.json`:
    ```json
    {
      "ConnectionStrings": {
-       "DefaultConnection": "Host=localhost;Database=andromeda_asp;Username=postgres;Password=password"
+       "Neo4jConnection": "bolt://localhost:7687",
+       "RedisConnection": "localhost:6379"
      }
    }
    ```
-5. Apply migrations and update the database:
+5. Apply migrations and update the Neo4j database:
    ```sh
    dotnet ef database update
    ```
